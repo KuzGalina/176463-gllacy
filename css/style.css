@@ -1,39 +1,425 @@
 body {
-	font-size:16px;
-	line-height:22px;
-	color:#ffffff;
-	font-family:"Roboto", sans-serif;
-	background-color:#849d8f;
+	
+	font-size: 16px;
+	line-height: 22px;
+	font-family: "Roboto", sans-serif;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	/* для оформления сетки */ 
+	margin: 0 auto;
+	width: 1200px;
+	background-color:#849d8f; 
+	/* */
+	
 }
 
+.container{
+	width: 1146px;
+	margin: 0 auto;	
+	outline: 1px solid red;
+}
+
+ul{
+	margin: 0;
+	padding :0;	
+}
+
+header{
+	display: flex;
+	padding-top: 9px;
+	/*для оформления сетки*/
+	min-height: 64px;
+	outline: 1px solid orange;
+	/* */
+}
+
+.logo{
+	width: 154px;
+	height: 64px;
+	margin-right: 22px;
+	outline: 1px solid green;
+}
+
+nav {
+	width: 560px;;
+	/*для оформления сетки*/
+	min-height: 64px;
+	outline: 1px solid green;
+	/* */
+}
+
+.main-nav > li{
+	display: inline-block;
+	vertical-align: top;	
+}
+
+.submenu{
+	display: none;	
+}
+
+.search-form{
+	display: none;	
+}
+
+.login-form{
+	display: none;	
+}
+
+.basket-form{
+	display: none;	
+}
+.user-block{
+	width: 330px;
+	margin-left: auto;
+	
+	/*для оформления сетки*/
+	min-height: 64px;
+	outline: 1px solid green;
+	/* */
+}
+
+.user-block li {
+	display: inline-block;
+	vertical-align: top;	
+}
+
+
+.contact-phone {
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	width: 170px;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+	
+	/*для офомления сетки*/
+	min-height: 59px;
+	outline: 1px solid green;
+	/* */
+}
+
+.phone {
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: bold;	
+}
+
+.slider{
+	width: 697px;
+	margin: 0 auto;
+	margin-top: 274px;
+	text-align: center;
+	margin-bottom: 39px;
+	margin-top: 274px;
+	/*для оформления сетки*/
+	min-height: 216px; 
+	outline: 1px solid orange;
+	/* */
+	
+	
+}
+
+
 .slider-title{
-	font-size:60px;
+	font-size: 60px;
 	line-height: 60.35px;
-	font-weight:bold;
+	font-weight: bold;
 		
 }
 
+.bonus{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 37px;
+	/*для оформления сетки*/
+	min-height: 230px;	
+	/* */
+}
+
+.bonus-item{
+	width: 560px;
+	/*для оформления сетки*/
+	min-height: 230px;
+	outline: 1px solid orange;
+	/* */
+}
+
+
 .bonus-title{
-	font-size:35px;
-	font-weight:bold;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.product{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/*для оформления сетки*/
+	outline: 1px solid orange;
+	/* */
+}
+
+.product-item{
+	width: 267px;
+	/*для оформления сетки*/
+	min-height: 330px;
+	outline: 1px solid green;
+	/* */
+}
+
+.product-name{
+	font-size: 16px;
+	
+	margin:0;	
+}
+
+.product .btn{
+	display: none;	
+}
+
+
+
+.features{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	margin-top: 34px;
+	margin-bottom: 38px;
+	padding: 22px 19px;
+	font-size: 0;
+	text-align: left;
+	/*для оформления сетки*/
+	height: 267px;
+	outline: 1px solid orange;
+	/* */
+
 }
 
 .features-title{
-	font-size:24px;
-	line-height:30px;
-	font-weight:500;
-	color:#323232;	
+	margin: 0 0 10px;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #323232;	
+}
+
+.features-item{
+	width: 484px;
+	padding-left: 56px;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 22px;
+	
+	outline: 1px solid green;
+}
+
+
+.features-item:nth-child(2n) {
+	margin-right: auto;
+}
+
+.news-block{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;	
+}
+
+.news{
+	width: 524px;
+	padding: 22px 18px;
+	/*для оформления сетки*/
+	height: 186px;
+	outline: 1px solid orange;
+	/* */
+	
+}
+
+.subscribe{
+	width: 512px;
+	padding: 31px 18px;
+	border: 6px solid red;
+	/*для оформления сетки*/
+	height: 156px;
+	outline: 1px solid orange;
+	/* */
 }
 
 .news-title{
-	font-size:16px;
-	line-height:22px;
-	color:#323232;
-	font-weight:500;	
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;	
+	color: #323232;
+}
+
+.map{
+	width: inherit;
+	background-image: url("../img/map-marker.jpg");
+	background-repeat:no-repeat;
+	background-position: 50% 0;	
+	/*для оформления сетки*/
+	height: 430px; 
+	outline: 1px solid green;
+	/* */
+}
+
+.map-container {
+	display: flex;
+	justify-content: flex-end;
+	width: 1146px;
+	height: inherit;
+	margin: 0 auto;	
+	outline: 1px solid red;	
+}
+
+.contacts{
+	align-self: center;
+	width: 252px;
+	padding: 28px 25px;	
+	background-color: #ffffff;
+	color: #0e110f;
+	
+	/*для оформления сетки*/
+	min-height: 249px;
+	outline: 1px solid blue;
+	/* */
+}
+
+footer{
+	display: flex;
+	padding-top: 19px;
+	padding-bottom: 25px;	
+	/*для оформления сетки*/
+	min-height: 59px;
+	outline: 1px solid orange;
+	/* */
+}
+
+.footer-social{
+	width: 300px;
+	margin-right: 87px;
+	
+	outline: 1px solid green;
+	min-height: 59px;
+
+}
+
+.footer-info{
+	width: 467px;
+		
+	min-height: 59px;
+	outline: 1px solid green;
+}
+
+.footer-copyright{
+	width: 189px;
+	margin-left: auto;
+	
+	min-height: 59px;
+	outline: 1px solid green;
+}
+
+.feedback-form{
+	display: none;
+	
+	outline: 1px solid green;
+}
+
+.breadcrumbs {
+	display: flex;
+	margin-right: auto;
+	width: 267px;
+	/*для оформления сетки*/
+	min-height:	 47px;
+	outline: 1px solid green;
+	/* */
+}
+
+.breadcrumbs li{
+	display: inline-block;	
+	vertical-align:top;	
 }
 
 .catalog-title{
-	font-size:35px;
-	line-height:41px;
-	font-weight:bold;	
+	display: flex;
+	margin-right: auro;
+	/*для оформления сетки*/
+	margin:0;
+	/* */	
 }
+
+.filter {
+	margin-top: 24px;
+	/*для оформления сетки*/
+	min-height: 197px;	
+}
+
+.filter-form {
+	display: flex;	
+	flex-wrap: wrap;
+	margin-right: 15px;	
+	margin-bottom: 15px;
+}
+
+.sort-form{
+	width: 194px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	/*для оформления сетки*/
+	min-height: 61px;
+	outline: 1px solid green;
+	/* */	
+}
+.range-price-form{
+	width: 221px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	/*для оформления сетки*/
+	min-height: 61px;
+	outline: 1px solid green;
+	/* */
+}
+
+.fat-form{
+	width: 417px;
+	margin-bottom: 15px;
+	/*для оформления сетки*/
+	min-height: 61px;
+	outline: 1px solid green;
+	/* */
+	
+}
+
+.filler-form{
+	width: 703px;
+	/*для оформления сетки*/
+	min-height: 61px;
+	outline: 1px solid green;
+	/* */	
+}
+
+.button-form {
+	width: 144px;
+	/*для оформления сетки*/
+	min-height: 61px;
+	outline: 1px solid green;
+	/* */
+		
+}
+
+
+
+.paginator{
+	display: flex;
+	margin-left: auto;
+	margin-top: 65px;
+	width: 193px;
+	
+	/*для оформления сетки*/
+	outline: 1px solid green;
+	min-height:54px;
+	/* */	
+}
+
+
