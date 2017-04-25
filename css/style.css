@@ -1,4 +1,4 @@
-body {
+cssbody {
 	
 	font-size: 16px;
 	line-height: 22px;
@@ -26,6 +26,7 @@ ul{
 }
 
 header{
+	display: -ms-flexbox;
 	display: flex;
 	padding-top: 9px;
 	/*для оформления сетки*/
@@ -86,8 +87,10 @@ nav {
 
 
 .contact-phone {
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-ms-flex-direction: column;
+	    flex-direction: column;
 	margin-left: auto;
 	width: 170px;
 	font-size: 14px;
@@ -130,8 +133,10 @@ nav {
 }
 
 .bonus{
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
 	margin-bottom: 37px;
 	/*для оформления сетки*/
 	min-height: 230px;	
@@ -153,9 +158,12 @@ nav {
 }
 
 .product{
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	/*для оформления сетки*/
 	outline: 1px solid orange;
 	/* */
@@ -182,9 +190,12 @@ nav {
 
 
 .features{
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-align: stretch;
+	    align-items: stretch;
 	margin-top: 34px;
 	margin-bottom: 38px;
 	padding: 22px 19px;
@@ -221,8 +232,10 @@ nav {
 }
 
 .news-block{
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
 	margin-bottom: 40px;	
 }
 
@@ -265,8 +278,10 @@ nav {
 }
 
 .map-container {
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-end;
+	-ms-flex-pack: end;
+	    justify-content: flex-end;
 	width: 1146px;
 	height: inherit;
 	margin: 0 auto;	
@@ -274,7 +289,9 @@ nav {
 }
 
 .contacts{
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 	width: 252px;
 	padding: 28px 25px;	
 	background-color: #ffffff;
@@ -287,6 +304,7 @@ nav {
 }
 
 footer{
+	display: -ms-flexbox;
 	display: flex;
 	padding-top: 19px;
 	padding-bottom: 25px;	
@@ -327,6 +345,7 @@ footer{
 }
 
 .breadcrumbs {
+	display: -ms-flexbox;
 	display: flex;
 	margin-right: auto;
 	width: 267px;
@@ -342,6 +361,7 @@ footer{
 }
 
 .catalog-title{
+	display: -ms-flexbox;
 	display: flex;
 	margin-right: auro;
 	/*для оформления сетки*/
@@ -356,8 +376,10 @@ footer{
 }
 
 .filter-form {
+	display: -ms-flexbox;
 	display: flex;	
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;	
+	    flex-wrap: wrap;
 	margin-right: 15px;	
 	margin-bottom: 15px;
 }
@@ -411,6 +433,7 @@ footer{
 
 
 .paginator{
+	display: -ms-flexbox;
 	display: flex;
 	margin-left: auto;
 	margin-top: 65px;
