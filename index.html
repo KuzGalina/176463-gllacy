@@ -238,29 +238,38 @@
             </section>
                 
             <section class="footer-info">
-                <a href="#"><span class="bold">Для поставщииков</span></a>
-                <a href="#">О производстве</a>
-                <a href="#">Наши документы</a>
-                <a href="#">Экологические стандарты</a>
+            	<div class="footer-column-left">	
+                    <a class="bold" href="#">Для поставщииков</a>
+                    <a href="#">О производстве</a>
+                </div>
+                <div class="footer-column-right">
+                    <a href="#">Наши документы</a>
+                    <a href="#">Экологические стандарты</a>
+                </div>
             </section>
             <section class="footer-copyright">
                 <a href="https://htmlacademy.ru/intensive/htmlcss">
                     <img src="img/copyright.png" alt="htmlacademy">
                 </a>
                 <p>
-                    Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
+                    Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
                 </p>
             </section>
         </footer>
         
-        <div class="feedback-form">
+        <div class="modal-content">
             <form action="#" method="post">
                 <p>Мы обязательно вам ответим!</p>
                 <input type="text" name="name" placeholder="Как вас зовут?">
                 <input type="email" name="email" placeholder="Ваша почта для ответа?">
                 <textarea name="comment" id="comment-field" rows="5">Напишите что-нибудь...</textarea>
                 <button class="btn" type="submit">Отправить</button>
+                <button class="modal-content-close" type="button">Закрыть</button>
             </form>
-    </div>
+            
+ 		</div>
+        <div class="modal-overlay"></div>
+    </body>
+ </html>
     
     
