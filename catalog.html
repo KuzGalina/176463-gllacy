@@ -2,12 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Глейси</title>
   </head>
   <body class="inner-page">
-  	<div class="container">
-        <header>
+    <header class="main-header container">
             <div class="logo">
                 <a href="index.html"><img src="img/logo.png" alt="Gllacy"></a>
             </div>
@@ -45,8 +45,9 @@
                 <li class="search">
                     <a href="#">Поиск</a>
                     <div class="search-form">
-                        <form action="#" method="post" >
-                            <input type="search" name="search-box" placeholder="Что ищем?">
+                        <form action="#" method="post">
+                        	<label for="search-box">Что ищем?</label>
+                            <input type="text" id="search-box" name="search-box" placeholder="Что ищем?">
                         </form>
                     </div>
                 </li>
@@ -54,31 +55,35 @@
                     <a href="#">Вход</a>
                     <div class="login-form">
                         <form action="#" method="post">
-                            <input type="email" name="email" placeholder="Электронная почта">
+                        	<label for="email">Электронная почта</label>
+                            <input type="email" id="email" name="email" placeholder="Электронная почта">
+                            <label for="email">Пароль</label>
                             <input type="password" name="password" placeholder="Пароль">
                             <button class="btn" type="submit">Войти</button>
+                            <div class="link-form">
+                                <a class="login-link" href="#">Забыли пароль?</a>
+                                <a class="login-link" href="#">Новая регистрация</a>
+                        	</div>
                         </form>
-                        <a class="login-link" href="#">Забыли пароль?</a>
-                        <a class="login-link" href="#">Новая регистрация</a>
                     </div>
                 </li>
                 <li class="basket">
-                    <a href="#">Пусто</a>
+                    <a href="#">2 товара</a>
                     <div class="basket-form">
                         <table>
                             <tr>
-                                <td><img src="#" alt="удалить"></td>
-                                <td><img src="#" alt="картинка товара"></td>
-                                <td>Пломбир с апельсиновым джемом</td>
-                                <td>1,5кг х 200 руб.</td>
-                                <td>300руб</td>
+                                <td class="cell-1"></td>
+                                <td class="cell-2"><img src="img/ice-cream-small.jpg" alt="картинка товара"></td>
+                                <td class="cell-3">Пломбир с апельсиновым джемом</td>
+                                <td class="cell-4">1,5кг х <span class="basket-price">200 руб.</span></td>
+                                <td class="cell-5">300 руб.</td>
                             </tr>
                             <tr>
-                                <td><img src="#" alt="удалить"></td>
-                                <td><img src="#" alt="картинка товара"></td>
-                                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                                <td>1,5кг х 300 руб.</td>
-                                <td>450руб.</td>
+                                <td class="cell-1"></td>
+                                <td class="cell-2"><img src="img/ice-cream2-small.jpg" alt="картинка товара"></td>
+                                <td class="cell-3">Клубничный пломбир с присыпкой из белого шоколада</td>
+                                <td class="cell-4">1,5кг х <span class="basket-price">300 руб.</span></td>
+                                <td class="cell-5">450 руб.</td>
                             </tr>
                         </table>
                         <p><b>Итого: 750 руб.</b></p>
@@ -87,7 +92,7 @@
                 </li>
             </ul>
         </header>
-        <main>
+        <main class="container">
             <div class="contact-phone">
                 <p>C 10 до 20, ежедневно</p>
                 <span class="phone">8 812 450-25-25</span>
@@ -109,7 +114,7 @@
             </h1>
             <section class="filter">
                 <form class="filter-form" action="#" method="post" oninput="rangeOutput.value=rangePrice.value">
-                    <div class="sort-form">
+                    <!--<div class="sort-form">
                         <p>Сортировка:</p>	
                         <div class="filter-wrapper">
                             <select name="sort">
@@ -118,9 +123,43 @@
                                 <option value="inexpensive">Сначала дешевые</option>
                             </select>
                         </div>
+                    </div>-->
+                    
+                    <div class="sort-form">
+                        <p>Сортировка:</p>	
+                            <select name="sort">
+                                <option value="popular">По популярности</option>
+                                <option value="expensive">Сначала дорогие</option>
+                                <option value="inexpensive">Сначала дешевые</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="range-price-form">
-                        <!-- Ценовой фильтр -->
+                    
+                    
+                    <div class="range-form">
+                    	<div class="price-controls">
+                        	<label class="min-price">
+                                Цена: 
+                                <input name="min-price" type="text" value="100">
+                            </label>
+                            <label class="max-price">
+                                - 
+                                <input name="max-price" type="text" value="500">
+                            </label>
+                        
+                        </div> 
+                    	<div class="filter-wrapper">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar">
+                                    </div>
+                                </div>
+                                <div class="toggle toggle-min"></div>
+                                <div class="toggle toggle-max"></div>
+                            </div>
+                        </div>
+                           
+                        
                     </div>
                     <div class="fat-form">
                         <p>Жирность:</p>
@@ -185,7 +224,7 @@
                     <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                     <p class="price"><span class="rouble">310</span>/кг</p>
                     <p class="product-name">
-                        Сливочное с апельсиновым джемом и цитрусовой стружкой
+                        <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
                     </p>
                     <a class="btn product-btn" href="#">Быстрый просмотр</a>
                 </article>
@@ -248,10 +287,10 @@
                 <article class="product-item">
                     <img src="img/product-9.jpg" width="267" height="267" alt="Сливочное-ванильное с кусочками шоколада">
                     <p class="price"><span class="rouble">440</span>/кг</p>
-                    <p class="product-name product-btn">
+                    <p class="product-name">
                         Сливочное-ванильное с кусочками шоколада
                     </p>
-                    <a class="btn" href="#">Быстрый просмотр</a>
+                    <a class="btn product-btn" href="#">Быстрый просмотр</a>
                 </article>
                 <article class="product-item">
                     <img src="img/product-10.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
@@ -315,6 +354,5 @@
                 </p>
             </section>
         </footer>
-   </div>
   </body>
 </html>
