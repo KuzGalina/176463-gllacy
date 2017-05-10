@@ -526,10 +526,10 @@ body {
 .user-block .basket:hover .basket-form,
 .user-block .basket:focus .basket-form {
 	display: block;
-	-webkit-box-orient: vertical;
+	/*-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
-	        flex-direction: column;
+	        flex-direction: column;*/
 }
 
 .basket-form table {
