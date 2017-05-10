@@ -15,4 +15,5 @@
 		  close.addEventListener("click", function(evt) {		  
 			evt.preventDefault();
 			popup.classList.remove("modal-content-show");
+			overlay.classList.remove("modal-content-show");
 		  });
