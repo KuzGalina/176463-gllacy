@@ -526,10 +526,6 @@ body {
 .user-block .basket:hover .basket-form,
 .user-block .basket:focus .basket-form {
 	display: block;
-	/*-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;*/
 }
 
 .basket-form table {
@@ -1157,7 +1153,17 @@ footer{
 }
 
 .inner-footer {
-	border-top: 1px solid #a9bbb1;	
+	position: relative;	
+}
+
+.inner-footer:before {
+	content:"";
+	position: absolute;
+	top: 0;
+	left: 27px;
+	right: 27px;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.3);
 }
 
 .bold {
@@ -1770,7 +1776,7 @@ footer{
 }
 
 .paginator .next {
-	background: transparent url("../img/spritesheet.png") no-repeat -4px -618px;
+	background: transparent url("../img/spritesheet.png") no-repeat -2px -618px;
 }
 
 .paginator .prev:hover,
