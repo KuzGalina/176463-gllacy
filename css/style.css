@@ -1167,17 +1167,6 @@ body > input[type="radio"] {
 	border: none;
 }
 
-.map-container {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: end;
-	    -ms-flex-pack: end;
-	        justify-content: flex-end;
-	width: 1146px;
-	margin: 0 auto;
-}
-
 .contacts {
 	position: absolute;
 	top: 63px;
